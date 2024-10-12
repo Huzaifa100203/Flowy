@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* border: 1px solid red; */
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 200px;
+    background-color: black;
+}
+.top-section{
+    width: 100%;
+    height: 60vh;
+    background-color: #FECCB4;
+    padding-inline: 90px;
+    display: flex;
+}
+.left{
+    padding-block: 50px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    h1{
+        color: #373737;
+        font-size: 46px;
+        line-height: 60px;
+    }
+    img{
+        width: 12%;
+    }
+    input{
+        width: 50%;
+        height: 40px;
+        background-color: #FECCB4;
+        border: none;
+        border-bottom: 0.5px solid ;
+        font-size: 18px;
+        
+    }
+}
+.box{
+    border-bottom: 1.5px solid;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    input{
+        border: none;
+        width: 80%;
+    }
+}
+
+.right{
+    padding-block: 60px;
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: top;
+    flex-direction: column;
+    height: auto;
+    p{
+        line-height: 25px;
+        font-size: 20px;
+        color: #393838;
+        margin-bottom: 60px;
+    }
+    em{
+        visibility: hidden;
+        font-size: 5px;
+    }
+}
+.box2{
+    width: 120px;
+    background-color: #373737;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    button{
+        border: 1px solid;
+        font-size: 13px;
+        font-weight: 600;
+        transform: translate(-5px, -5px);
+        width: 120px;
+        height: 40px;
+        background-color: #95E3DE;
+        border-radius: 10px;
+    }
+    img{
+        margin-top: 2px;
+        width: 12%;
+        border: 1px solid;
+        border-radius: 20px;
+    }
+}
+.bottom-section{
+    width: 100%;
+    height: 45vh;
+    background-color: #373737;
+    padding-block: 50px 10px;
+    padding-inline: 90px;
+}
+.top{
+    width: 95%;
+    height: 80%;
+    columns: 4;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+    li{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    border-bottom: 1px solid rgb(201, 195, 195);
+}
+.logo{
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(202, 196, 196);
+    h3{
+        margin-block: -50px 30px;
+        font-size: 30px;
+        color: white;
+    }
+    img{
+        width: 25%;
+        height: 30px;
+        margin-right: 5px;
+    }
+}
+.li3{
+    width: 25%;
+    line-height: 30px;
+}
+.box3{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #FCFCFC;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    input{
+        width: 55%;
+        background-color: none;
+        border: none;
+    }
+    button{
+        width: 40%;
+        height: 32px;
+        border-radius: 10px;
+        background-color: #95E3DE;
+        border: 1px solid;
+    }
+}
+.bottom{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(193, 185, 185);
+    margin-top: 20px;
+    font-size: 10px;
+}
+.icon{
+    i{
+        margin-top: 6px;
+        margin-left: 8px;
+        width: 20px;
+        height: 15px;
+    }
+    span{
+        border: 1px solid gray;
+        border-radius: 20px;
+        width: 19%;
+        height: 25px;
+    }
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media (max-width:768px){
+    .main-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .top-section{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .left{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        br{
+            display: none;
+        }
+        h1{
+            font-size: 35px;
+        }
+        input{
+            width: 100%;
+        }
+        .box{
+            width: 100%;
+        }
+    }
+    .right{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        br{
+            display: none;
+        }
+    }
+    .bottom-section{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .top{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 20px;
+        column-gap: 10px;
+        .logo{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            br{
+                display: none;
+            }
+        }
+        .li1{
+            width: 30%;
+            height: 150px;
+        }
+        .li2{
+            width: 30%;
+            height: 150px;
+        }
+        .li3{
+            width: 100%;
+            height: 150px;
+        }
+        .box3{
+            width: 100%;
+            button{
+                width: 45%;
+            }
+        }
+    }
+    .bottom{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .icon{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
